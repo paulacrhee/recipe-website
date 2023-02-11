@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+@layer base {
+  body {
+    @apply font-primary bg-background text-paragraph font-[Poppins];
+  }
+  a {
+    @apply hover:text-orange transition;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading;
+  }
+  .h1 {
+    @apply text-[36px] leading-[46px] lg:text-[70px] lg:leading-[80px] font-extrabold;
+  }
+  .h2 {
+    @apply text-[26px] leading-[36px] lg:text-[50px] lg:leading-[60px] font-bold;
+  }
+  .h3 {
+    @apply text-[18px] leading-[28px] lg:text-[34px] lg:leading-[44px] font-semibold;
+  }
+  .section-sm {
+    @apply py-[70px];
+  }
+  .section-lg {
+    @apply py-[150px];
+  }
+  .btn {
+    @apply font-medium rounded text-base bg-shape;
+  }
+  .btn-sm {
+    @apply h-[48px] px-[25px];
+  }
+  .btn-md {
+    @apply h-[50px] px-[16px];
+  }
+  .btn-lg {
+    @apply h-[58px] rounded-md px-[40px];
+  }
+  .btn-orange {
+    @apply bg-orange text-white hover:bg-orange-hover transition;
+  }
+}
